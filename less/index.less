@@ -28,7 +28,7 @@ time, mark, audio, video {
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
-}
+}p
 body {
 	line-height: 1;
 }
@@ -49,11 +49,123 @@ table {
 }
 
 /* Set every element's box-sizing to border-box */
-* {
-    box-sizing: border-box;
+*{box-sizing: border-box;}
+// font stuff
+.listFont{
+	font-size:1.3rem;
+	font-style: italic;
+	text-decoration: underline;
+
+}
+.mainFont{
+	font-size: 1.4rem;
+	text-decoration: underline;
+}
+.flexColumn{
+	display: flex;
+	flex-direction: column;
 }
 
-html, body {
-    height: 100%;
+@whiteBackground : rgb (211,204,204);
+
+html,body {
+	height: 100%;
+	background-color:greywhite;
+}	.container{
+		padding: 100px;
+		header{
+			padding-bottom: 6%;
+		nav { display: flex;
+			justify-content: space-around;
+		a{
+			font-family: sans-serif;
+			font-size: 1.2 rem;
+		}
+	}
 }
 
+
+// break
+.sec1{
+	width: 98%;
+	.flexColumn();
+	padding: 4%;
+	section{
+		display:flex;
+		@media(max-width:500px){
+			flex-direction: column;
+		}
+	}
+}
+h1{
+	margin:auto;
+	align-self: center;
+	font-size: 4rem;
+	text-align: center;
+	width: 40%;
+//media//
+@media(max-width: 500px){
+	text-align: left;
+	align-self: flex-end;
+	margin: 3%;
+	width: 100%;
+	font-size: 2rem;
+}
+}
+//img
+img{margin:auto;width: 39%;min-width:200px;}
+
+h3{
+	padding: 3% 0% 3% 0%;
+	font-size: 1 rem;
+	align-self: center;
+// /media
+	@media (max-width:500px){
+		padding: 6% 0% 6% 0%
+	}
+}
+
+p{align-self:center;} 
+button{
+	align-self:center;
+	height: 40px;
+	width: 60px;
+	border: 10px;
+	margin: 4%;
+}
+//divider
+
+.divider{
+	display:flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	color: black;
+	margin: auto;
+	padding:auto;
+	width: 100%;
+
+// MEDIA!!	
+	@media(max-width: 500px){
+		.flexColumn();
+		align-self: center;
+		justify-content: center;
+		align-item: center;
+		width:100%;
+		padding: 0%;
+		margin: 0%;
+	}
+}  h4{.mainFont();}
+h5{ font-size:.9rem;}
+p{font-style: italic;}
+}
+
+.sec3{width:20%;.flexColumn();line-height: 2rem;
+@media(max-width:500px){
+	width:100%;
+}
+h3{.listFont();}
+.skills{padding-bottom:1.5rem;}
+.ref{li{padding-bottom:1.5rem;}}
+}
+
+footer{width:85%;padding:0% 0% 0% 10%;p{}}	
